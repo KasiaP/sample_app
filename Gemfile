@@ -11,6 +11,7 @@ group :development do
   gem 'nifty-generators'
   gem 'wirble'
   gem 'hirb'
+  gem 'annotate-models', '1.0.4'
 gem 'rspec-rails'
 end
 

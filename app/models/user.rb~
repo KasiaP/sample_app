@@ -1,0 +1,6 @@
+class User < ActiveRecord::Base
+attr_accessible :imie, :nazwisko, :email, :www, :adres 
+validates :nazwisko, :presence => true,
+  :length   => { :maximum => 50 }
+  validates :email, :presence => true
+end
