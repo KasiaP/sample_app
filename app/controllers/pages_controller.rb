@@ -9,4 +9,7 @@ class PagesController < ApplicationController
   def about
     @title = "About"
   end
+  def pomoc
+    @title = "Pomoc"
+  end
 end
