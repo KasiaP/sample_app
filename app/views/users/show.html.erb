@@ -1,1 +1,18 @@
-<%= @user.imie %>, <%= @user.nazwisko %>, <%= @user.email %>, <%= @user.www %>, <%= @user.adres %> 
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+<h1>
+<%= gravatar_for @user %>
+  <%= @user.nazwisko %> <%= @user.imie %>
+</h1>
+ </td>
+    <td class="sidebar round">
+      <strong>Imie</strong> <%= @user.imie %><br />
+      <strong>Nazwisko</strong> <%= @user.nazwisko %><br />
+      
+      <strong>Email</strong> <%= @user.email %><br />
+     <strong>Adres</strong> <%= @user.adres %><br />
+     <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+    </td>
+  </tr>
+</table>

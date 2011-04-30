@@ -5,7 +5,7 @@ gem 'rails'                  # usuwamy nuzawsze z ostatniej wersji
 
 gem 'sqlite3'
 gem 'thin'                   #ra Thin zamiast . Webrick
-
+gem 'gravatar_image_tag', '1.0.0.pre2'
 # zob. konfiguracja irb ($HOME/.irbrc)
 group :development do
   gem 'nifty-generators'
